@@ -42,14 +42,13 @@ body {
 .content--title {
   grid-area: title;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: hsl(217deg, 19%, 35%);
 }
 
 .content--text {
   grid-area: text;
-  font-size: 0.9rem;
-  line-height: 1.3rem;
+  line-height: 1.4rem;
   color: hsl(214deg, 17%, 51%);
 }
 
@@ -78,6 +77,23 @@ body {
   margin-left: 7px;
   color: hsl(212deg, 23%, 69%);
   font-size: 0.8rem;
+}
+
+.share-btn {
+  grid-area: share;
+  justify-self: center;
+  align-self: center;
+}
+.share-btn .btn {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: hsl(210deg, 46%, 95%);
+  border: none;
+  background-image: url(/icon-share.47ee54f4.svg);
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  background-position: center center;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
