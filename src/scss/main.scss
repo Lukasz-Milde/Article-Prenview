@@ -121,6 +121,7 @@ body {
 	justify-content: space-between;
 	background-color: $title-color;
 	padding: 1rem 2rem;
+	visibility: hidden;
 	span {
 		color: $date-color;
 		letter-spacing: 0.3rem;
@@ -145,4 +146,8 @@ body {
 	height: 2rem;
 	width: 2rem;
 	background: $title-color;
+}
+
+.active {
+	visibility: visible;
 }

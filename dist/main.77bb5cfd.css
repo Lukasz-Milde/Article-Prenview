@@ -108,6 +108,7 @@ body {
   justify-content: space-between;
   background-color: hsl(217deg, 19%, 35%);
   padding: 1rem 2rem;
+  visibility: hidden;
 }
 .share-option span {
   color: hsl(212deg, 23%, 69%);
@@ -132,6 +133,10 @@ body {
   height: 2rem;
   width: 2rem;
   background: hsl(217deg, 19%, 35%);
+}
+
+.active {
+  visibility: visible;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
