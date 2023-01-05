@@ -25,10 +25,10 @@ body {
 
 .card {
 	width: 55vw;
-	height: 40vh;
+	min-height: 50vh;
 	display: flex;
 
-	background-color: pink;
+	background-color: white;
 	border-radius: 13px;
 	overflow: hidden;
 }
@@ -42,4 +42,54 @@ body {
 }
 
 .content {
+	padding: 2rem;
+	display: grid;
+	grid-template-columns: 15% 70% 15%;
+	grid-template-rows: 40% 40% 10% 10%;
+	grid-template-areas:
+		"title title title"
+		"text text text"
+		"img name share"
+		"img date share";
+}
+
+.content--title {
+	grid-area: title;
+	font-weight: 700;
+	font-size: 1.2rem;
+	color: $title-color;
+}
+
+.content--text {
+	grid-area: text;
+	font-size: 0.9rem;
+	line-height: 1.3rem;
+	color: $text-color;
+}
+
+.avatar-pic {
+	grid-area: img;
+	justify-self: center;
+	align-self: center;
+	img {
+		width: 3rem;
+		border-radius: 50%;
+	}
+}
+
+.name {
+	grid-area: name;
+	align-self: center;
+	margin-left: 7px;
+	font-weight: 700;
+	font-size: 0.9rem;
+	color: $title-color;
+}
+
+.date {
+	grid-area: date;
+	align-self: center;
+	margin-left: 7px;
+	color: $date-color;
+	font-size: 0.8rem;
 }
