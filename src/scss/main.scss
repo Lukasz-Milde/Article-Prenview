@@ -25,12 +25,10 @@ body {
 
 .card {
 	width: 55vw;
-	min-height: 50vh;
+	min-height: 40vh;
 	display: flex;
-
 	background-color: white;
 	border-radius: 13px;
-	overflow: hidden;
 }
 
 .card--image {
@@ -97,6 +95,7 @@ body {
 	grid-area: share;
 	justify-self: center;
 	align-self: center;
+	position: relative;
 	.btn {
 		width: 2rem;
 		height: 2rem;
@@ -108,4 +107,42 @@ body {
 		background-size: 1rem;
 		background-position: center center;
 	}
+}
+
+.share-option {
+	position: absolute;
+	bottom: 70px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+	width: 250px;
+	justify-content: space-between;
+	background-color: $title-color;
+	padding: 1rem 2rem;
+	span {
+		color: $date-color;
+		letter-spacing: 0.3rem;
+		font-size: 0.9rem;
+	}
+	img {
+		position: relative;
+		z-index: 2;
+		display: block;
+		width: 1.4rem;
+		height: auto;
+	}
+}
+
+.share-option::after {
+	position: absolute;
+	bottom: -0.5rem;
+	left: 50%;
+	transform: translate(-50%) rotate(45deg);
+	z-index: 1;
+	content: "";
+	height: 2rem;
+	width: 2rem;
+	background: $title-color;
 }
