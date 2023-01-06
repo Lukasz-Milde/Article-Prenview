@@ -96,6 +96,7 @@ body {
 	justify-self: center;
 	align-self: center;
 	position: relative;
+
 	.btn {
 		width: 2rem;
 		height: 2rem;
@@ -106,6 +107,11 @@ body {
 		background-repeat: no-repeat;
 		background-size: 1rem;
 		background-position: center center;
+		cursor: pointer;
+	}
+	.btn:hover,
+	.btn:active {
+		background-color: $date-color;
 	}
 }
 

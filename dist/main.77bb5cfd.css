@@ -94,6 +94,11 @@ body {
   background-repeat: no-repeat;
   background-size: 1rem;
   background-position: center center;
+  cursor: pointer;
+}
+.share-btn .btn:hover,
+.share-btn .btn:active {
+  background-color: hsl(212deg, 23%, 69%);
 }
 
 .share-option {
