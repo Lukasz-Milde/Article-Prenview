@@ -97,7 +97,7 @@ body {
   background-color: hsl(212deg, 23%, 69%);
 }
 
-#share-icon:hover {
+.share-icon:hover {
   color: white;
 }
 
