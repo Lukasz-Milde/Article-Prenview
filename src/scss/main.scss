@@ -37,6 +37,7 @@ body {
 	background-image: url(../../images/drawers.jpg);
 	background-size: cover;
 	background-position: left center;
+	border-radius: 13px 0 0 13px;
 }
 
 .content {
@@ -44,6 +45,7 @@ body {
 	display: grid;
 	grid-template-columns: 15% 70% 15%;
 	grid-template-rows: 40% 40% 10% 10%;
+	gap: 8px;
 	grid-template-areas:
 		"title title title"
 		"text text text"
@@ -81,6 +83,10 @@ body {
 	font-weight: 700;
 	font-size: 0.9rem;
 	color: $title-color;
+	cursor: pointer;
+	&:hover {
+		color: $date-color;
+	}
 }
 
 .date {
@@ -103,19 +109,23 @@ body {
 		border-radius: 50%;
 		background-color: $body-bck;
 		border: none;
-		// background-image: url(../../images/icon-share.svg);
-		// background-repeat: no-repeat;
-		// background-size: 1rem;
-		// background-position: center center;
 		cursor: pointer;
 	}
+	.arrow {
+		color: $text-color;
+	}
+
 	.btn:hover,
 	.btn:active {
 		background-color: $date-color;
+		color: $body-bck;
+		.arrow {
+			color: $body-bck;
+		}
 	}
 }
 
-.share-icon:hover {
+share-icon:hover {
 	color: white;
 }
 
@@ -137,12 +147,17 @@ body {
 		letter-spacing: 0.3rem;
 		font-size: 0.9rem;
 	}
-	img {
+	.icons {
 		position: relative;
 		z-index: 2;
-		display: block;
-		width: 1.4rem;
-		height: auto;
+		width: 1.5rem;
+		height: 1.5rem;
+		color: $date-color;
+	}
+	span:hover,
+	.icons:hover,
+	.icons:active {
+		color: $body-bck;
 	}
 }
 
@@ -160,4 +175,30 @@ body {
 
 .active {
 	visibility: visible;
+}
+
+@media (max-width: 375px) {
+	.card {
+		width: 93vw;
+		flex-direction: column;
+		margin: 10px auto;
+	}
+	.card--image {
+		width: 100%;
+		border-radius: 13px 13px 0 0;
+	}
+
+	.share-option {
+		position: absolute;
+		bottom: -2rem;
+		left: 0;
+		display: flex;
+		align-items: center;
+		border-radius: 10px;
+		width: 93vw;
+		justify-content: space-between;
+		background-color: $title-color;
+		padding: 1rem 2rem;
+		visibility: visible;
+	}
 }
