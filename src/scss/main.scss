@@ -103,16 +103,20 @@ body {
 		border-radius: 50%;
 		background-color: $body-bck;
 		border: none;
-		background-image: url(../../images/icon-share.svg);
-		background-repeat: no-repeat;
-		background-size: 1rem;
-		background-position: center center;
+		// background-image: url(../../images/icon-share.svg);
+		// background-repeat: no-repeat;
+		// background-size: 1rem;
+		// background-position: center center;
 		cursor: pointer;
 	}
 	.btn:hover,
 	.btn:active {
 		background-color: $date-color;
 	}
+}
+
+.share-icon:hover {
+	color: white;
 }
 
 .share-option {

@@ -90,15 +90,15 @@ body {
   border-radius: 50%;
   background-color: hsl(210deg, 46%, 95%);
   border: none;
-  background-image: url(/icon-share.47ee54f4.svg);
-  background-repeat: no-repeat;
-  background-size: 1rem;
-  background-position: center center;
   cursor: pointer;
 }
 .share-btn .btn:hover,
 .share-btn .btn:active {
   background-color: hsl(212deg, 23%, 69%);
+}
+
+#share-icon:hover {
+  color: white;
 }
 
 .share-option {
