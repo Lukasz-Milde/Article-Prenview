@@ -121,10 +121,10 @@ share-icon:hover {
   left: 50%;
   transform: translateX(-50%);
   display: flex;
+  justify-content: space-between;
   align-items: center;
   border-radius: 10px;
   width: 250px;
-  justify-content: space-between;
   background-color: hsl(217deg, 19%, 35%);
   padding: 1rem 2rem;
   visibility: hidden;
@@ -168,23 +168,35 @@ share-icon:hover {
     width: 93vw;
     flex-direction: column;
     margin: 10px auto;
+    position: relative;
   }
   .card--image {
     width: 100%;
     border-radius: 13px 13px 0 0;
   }
+  .share-btn {
+    position: static;
+  }
   .share-option {
     position: absolute;
-    bottom: -2rem;
-    left: 0;
+    bottom: 0;
+    right: 0;
     display: flex;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
+    justify-content: flex-end;
     width: 93vw;
-    justify-content: space-between;
+    height: 5rem;
+    justify-content: flex-start;
     background-color: hsl(217deg, 19%, 35%);
     padding: 1rem 2rem;
-    visibility: visible;
+    visibility: hidden;
+  }
+  .icons {
+    margin-left: 10px;
+  }
+  .share-option::after {
+    visibility: hidden;
   }
 }
 
