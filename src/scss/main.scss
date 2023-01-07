@@ -173,15 +173,11 @@ share-icon:hover {
 	background: $title-color;
 }
 
-.active {
-	visibility: visible;
-}
-
 // $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 // $$$$$$$$$$___MEDIA QUERIES___$$$$$$$$$$$$
 // $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
-@media (max-width: 375px) {
+@media (max-width: 700px) {
 	.card {
 		width: 93vw;
 		flex-direction: column;
@@ -195,10 +191,12 @@ share-icon:hover {
 
 	.share-btn {
 		position: static;
+		z-index: 1;
 	}
 
 	.share-option {
 		position: absolute;
+		z-index: -1;
 		bottom: 0;
 		right: 0;
 		display: flex;
@@ -220,4 +218,12 @@ share-icon:hover {
 	.share-option::after {
 		visibility: hidden;
 	}
+}
+
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+// $$$$$$$$$$_____JS CLASS______$$$$$$$$$$$$
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+.active {
+	visibility: visible;
 }
