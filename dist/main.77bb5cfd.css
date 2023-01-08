@@ -32,10 +32,10 @@ body {
 }
 
 .content {
-  padding: 2rem;
+  padding: 3rem;
   display: grid;
   grid-template-columns: 15% 70% 15%;
-  grid-template-rows: 40% 40% 10% 10%;
+  grid-template-rows: 40% 40% 7% 7%;
   gap: 8px;
   grid-template-areas: "title title title" "text text text" "img name share" "img date share";
 }
@@ -45,12 +45,14 @@ body {
   font-weight: 700;
   font-size: 1.4rem;
   color: hsl(217deg, 19%, 35%);
+  overflow-wrap: break-word;
 }
 
 .content--text {
   grid-area: text;
   line-height: 1.4rem;
   color: hsl(214deg, 17%, 51%);
+  overflow-wrap: break-word;
 }
 
 .avatar-pic {
@@ -161,7 +163,7 @@ share-icon:hover {
 
 @media (max-width: 700px) {
   .card {
-    width: 93vw;
+    width: 90vw;
     flex-direction: column;
     margin: 10px auto;
     position: relative;
@@ -169,6 +171,16 @@ share-icon:hover {
   .card--image {
     width: 100%;
     border-radius: 13px 13px 0 0;
+  }
+  .content {
+    padding-bottom: 2rem;
+  }
+  .content--title {
+    font-size: 1.1rem;
+  }
+  .content--text {
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
   }
   .share-btn {
     position: static;
